@@ -1,0 +1,1 @@
+create or replace table `som-nero-phi-jonc101.rose_moore.cohort_AL_60_no_doe` as SELECT jc_uid, inpatientAdmitTime, tpaAdminTime, emergencyAdmitTime FROM `som-nero-phi-jonc101.noshad.cohort_AL_60` WHERE pat_enc_csn_id_coded NOT IN (#MRN list) group by jc_uid, inpatientAdmitTime, tpaAdminTime, emergencyAdmitTime
